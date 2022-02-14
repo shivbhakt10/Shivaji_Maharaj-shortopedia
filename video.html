@@ -6,46 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>videos</title>
 </head>
-<body style="background-image: url('images/videoback1.jpg'); background-repeat: no-repeat;background-size: cover;">
+<body style="background-image: url('images/videoback1.jpg'); background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;">
     <style>
-        .vi{
-            padding-left: 12%;
-        }
-        @media only screen and (max-width: 1180px){
-        .video1{
-                width:'1000' ;
-                height:'840';
-        }
-        .video1::before{
+       iframe{
             display: block;
-            content: '';
-            padding-top: 56.25%;
-        }
-        @media only screen and (max-width: 998px){
-            .video1{
-                width: '720';
-                height:'640';
-        }
-        }
-        @media only screen and (max-width: 768px){
-            .video1{
-                width:'320';
-                height:'240';}
+            margin: 1em auto;
+            width: 80%;
+            height: calc(.5625 * 80vw);
         }
     </style>
     <h1 style="color: aliceblue;text-align: center;">videos</h1>
-    <div class="vi">
-    <video width="1000" height="840" controls class="video1">
-        <source src="Kankhar Bandha Song.mp4" type="video/mp4">
-      </video>
-      <br><br>
-    <video width="1000" height="840" controls class="video1">
-        <source src="Tuch Arjun Song.mp4" type="video/mp4">
-    </video>
-    <br> <br>
-    <video width="1000" height="840" controls class="video1">
-        <source src="Shivaji maharaj killed afzal khan.mp4" type="video/mp4">
-    </video>
-    </div>
+    
+    <iframe width="560" height="315" src="Kankhar Bandha Song .mp4" frameborder="0" allowfullscreen></iframe>
+    <br>
+        <iframe width="560" height="315" src="Tuch Arjun Song .mp4" frameborder="0" allowfullscreen></iframe>
+    <br>
+        <iframe width="560" height="315" src="Shivaji maharaj killed afzal khan.mp4" frameborder="0" allowfullscreen></iframe>
+    
 </body>
 </html>
