@@ -1,0 +1,148 @@
+
+/* making the borders invisible*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* defaulting the values of things in body*/
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    text-transform: uppercase;
+    
+}
+/* adiding background image to header/whole body */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url('../images/death&sucession.jpg') ;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.clearfix::after{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    
+    
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+}
+.main-nav li a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid white;
+}
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: aliceblue;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding: 10px,30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 200px;
+    text-decoration:none;
+    transition: background-color 0.2s , border 0.2s, color 0.2;
+    
+    background-color: transparent;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid white;
+    
+}
+.btn:hover{
+    background-color:purple;
+}
+.colorchange{
+    animation: colorchanged 1s infinite;
+}
+@keyframes colorchanged{
+    0%{color: red;}
+    25%{color:blue ;}
+    50%{color: yellow;}
+    75%{color: aqua;}
+    100%{color: hotpink;}
+
+}
+.mobileicon{display: none;}
+
+/* /////// making screen contents small and big for devices ///////*/
+@media only screen and (max-width: 1180px){
+    .main-content{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 180%;}
+}
+@media only screen and (max-width: 768px){
+    h1{font-size: 100%;}
+    /*for invisibling navigation items*/
+    .main-nav{display: none;}
+
+    
+    .mobileicon{
+        display: block;
+        color: white;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{float: left;}
+    
+    .main-nav li{
+        
+        display: block;
+        margin-top: 10px;}
+    }
+
+@media only screen and (max-width:480px){
+    .btn{
+        margin-bottom: 20px;
+    }
+}

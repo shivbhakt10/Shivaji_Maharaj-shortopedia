@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no ">
+    <title>mainpage</title>
+    <!-- linking with style css file-->
+    <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <!-- navigation bar-->
+        <nav>
+            <div class="row clearfix">
+                <!-- adding logo-->
+                <img src="images/logo.jpg" class="logo">
+
+                <ul class="main-nav animate__animated animate__backInDown" id="checkclass">
+                    <!-- li means list-->
+                    <li><a href="intermediater/english.html">English</a></li>
+                    <li><a href="intermediater/Marathi.html">Marathi</a></li>
+                    
+                </ul>
+                <a href="#" class="mobileicon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <!-- body part-->
+        <div class="main-content">
+        <h1 class="font-effect-neon">chattrapati shivaji <span class="colorchange">maharaj</span></h1>
+        <!-- adding buttons-->
+        <a href="intermediater/videos.html" class="btn">Videos</a>
+        <a href="intermediater/song.html" class="btn">Songs</a>
+        </div>
+    </header>
+    <script>
+        function slideshow(){
+            var x=document.getElementById('checkclass')
+            if(x.style.display === 'none'){
+                x.style.display = 'block'
+            }
+            else{
+                x.style.display ='none'
+            }
+        }
+    </script>
+</body>
+</html>
