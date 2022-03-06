@@ -101,6 +101,20 @@ h1{
 .colorchange{
     animation: colorchanged 1s infinite;
 }
+
+.pps{
+    
+    display: inline-flex;
+    margin: 0.5%;
+    font-weight: lighter;
+    font-size: small;
+}
+footer{
+    background-color: yellow;
+    align-content: center;
+}
+
+
 @keyframes colorchanged{
     0%{color: red;}
     25%{color:blue ;}
